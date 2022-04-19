@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+	<listener class-name="test_suite.Listeners"/>
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>         
+      <class name="test_suite.Landing_Page_Test"/>
+      <class name="test_suite.Terms_Condition_Test"/>
+      <class name="test_suite.Invitation_Code_Test"/>
+      <class name="test_suite.Org_Details_Test"/>
+      <class name="test_suite.Personal_Pan_Test"/>
+      <class name="test_suite.Mobile_Num_Test"/>
+      <class name="test_suite.Email_Id_Test"/>
+      <class name="test_suite.User_Credentials_Test"/>
+      <class name="test_suite.Data_driven_login_Test"/>
+      <class name="test_suite.Business_Pan_Test"/>  
+      <class name="test_suite.Cin_Validate_Test"/>
+      <class name="test_suite.Company_Details_Test"/>
+      <class name="test_suite.Office_Location_Test"/>
+      <class name="test_suite.Bank_Account_Test"/>       
+      <class name="test_suite.My_Catagories_Test"/>  
+      <class name="test_suite.Bill_Plan_Test"/>  
+      <class name="test_suite.Documents_Test"/>  
+      <class name="test_suite.Admin_Login_Test"/>
+      <class name="test_suite.Seller_Approval_Test"/> 
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

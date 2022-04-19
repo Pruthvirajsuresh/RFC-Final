@@ -1,0 +1,394 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>63/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Feb 19 22:50:32 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>103 seconds (103507 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@269f4bad</td></tr>
+<tr>
+<td title='test_suite.Personal_pan_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Personal_pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_pan_Test@3234f74e</td></tr>
+<tr>
+<td title='test_suite.Terms_condition_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Terms_condition_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Terms_condition_Test@62435e70</td></tr>
+<tr>
+<td title='test_suite.Mobile_num_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.Mobile_num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_num_Test@7bc10d84</td></tr>
+<tr>
+<td title='test_suite.Email_id_Test.mobile_verfy()'><b>mobile_verfy</b><br>Test class: test_suite.Email_id_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Email_id_Test@275fe372</td></tr>
+<tr>
+<td title='test_suite.Org_details_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.Org_details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_details_Test@5ed731d0</td></tr>
+<tr>
+<td title='test_suite.Terms_condition_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Terms_condition_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Terms_condition_Test@62435e70</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.Email_id_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Email_id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_id_Test@275fe372</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@269f4bad</td></tr>
+<tr>
+<td title='test_suite.Org_details_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Org_details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_details_Test@5ed731d0</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@269f4bad</td></tr>
+<tr>
+<td title='test_suite.Mobile_num_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.Mobile_num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_num_Test@7bc10d84</td></tr>
+<tr>
+<td title='test_suite.Mobile_num_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Mobile_num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_num_Test@7bc10d84</td></tr>
+<tr>
+<td title='test_suite.Mobile_num_Test.org_details()'><b>org_details</b><br>Test class: test_suite.Mobile_num_Test</td>
+<td></td>
+<td>1</td>
+<td>test_suite.Mobile_num_Test@7bc10d84</td></tr>
+<tr>
+<td title='test_suite.Email_id_Test.per_pan_validation()'><b>per_pan_validation</b><br>Test class: test_suite.Email_id_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Email_id_Test@275fe372</td></tr>
+<tr>
+<td title='test_suite.Email_id_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.Email_id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_id_Test@275fe372</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.Mobile_num_Test.per_pan_validation()'><b>per_pan_validation</b><br>Test class: test_suite.Mobile_num_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Mobile_num_Test@7bc10d84</td></tr>
+<tr>
+<td title='test_suite.Org_details_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Org_details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_details_Test@5ed731d0</td></tr>
+<tr>
+<td title='test_suite.Email_id_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Email_id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_id_Test@275fe372</td></tr>
+<tr>
+<td title='test_suite.Email_id_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.Email_id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_id_Test@275fe372</td></tr>
+<tr>
+<td title='test_suite.Terms_condition_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Terms_condition_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Terms_condition_Test@62435e70</td></tr>
+<tr>
+<td title='test_suite.Email_id_Test.email_vrf()'><b>email_vrf</b><br>Test class: test_suite.Email_id_Test</td>
+<td></td>
+<td>9</td>
+<td>test_suite.Email_id_Test@275fe372</td></tr>
+<tr>
+<td title='test_suite.Personal_pan_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.Personal_pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_pan_Test@3234f74e</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.Landing_Page_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Landing_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Landing_Page_Test@62fe6067</td></tr>
+<tr>
+<td title='test_suite.Mobile_num_Test.mobile_verfy()'><b>mobile_verfy</b><br>Test class: test_suite.Mobile_num_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Mobile_num_Test@7bc10d84</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.email_vrf()'><b>email_vrf</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>9</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.Landing_Page_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Landing_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Landing_Page_Test@62fe6067</td></tr>
+<tr>
+<td title='test_suite.Personal_pan_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.Personal_pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_pan_Test@3234f74e</td></tr>
+<tr>
+<td title='test_suite.Personal_pan_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Personal_pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_pan_Test@3234f74e</td></tr>
+<tr>
+<td title='test_suite.Email_id_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.Email_id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_id_Test@275fe372</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Invitation_Code_Test@269f4bad</td></tr>
+<tr>
+<td title='test_suite.Personal_pan_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Personal_pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_pan_Test@3234f74e</td></tr>
+<tr>
+<td title='test_suite.Email_id_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Email_id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_id_Test@275fe372</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.seller_cred()'><b>seller_cred</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>5</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.Mobile_num_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Mobile_num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_num_Test@7bc10d84</td></tr>
+<tr>
+<td title='test_suite.Email_id_Test.org_details()'><b>org_details</b><br>Test class: test_suite.Email_id_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Email_id_Test@275fe372</td></tr>
+<tr>
+<td title='test_suite.Mobile_num_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Mobile_num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_num_Test@7bc10d84</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.mobile_verfy()'><b>mobile_verfy</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.Terms_condition_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Terms_condition_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Terms_condition_Test@62435e70</td></tr>
+<tr>
+<td title='test_suite.Personal_pan_Test.org_details()'><b>org_details</b><br>Test class: test_suite.Personal_pan_Test</td>
+<td></td>
+<td>1</td>
+<td>test_suite.Personal_pan_Test@3234f74e</td></tr>
+<tr>
+<td title='test_suite.Mobile_num_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Mobile_num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_num_Test@7bc10d84</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.Email_id_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Email_id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_id_Test@275fe372</td></tr>
+<tr>
+<td title='test_suite.Personal_pan_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Personal_pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_pan_Test@3234f74e</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@269f4bad</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.per_pan_validation()'><b>per_pan_validation</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@269f4bad</td></tr>
+<tr>
+<td title='test_suite.Mobile_num_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.Mobile_num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_num_Test@7bc10d84</td></tr>
+<tr>
+<td title='test_suite.Org_details_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Org_details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_details_Test@5ed731d0</td></tr>
+<tr>
+<td title='test_suite.Personal_pan_Test.per_pan_validation()'><b>per_pan_validation</b><br>Test class: test_suite.Personal_pan_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Personal_pan_Test@3234f74e</td></tr>
+<tr>
+<td title='test_suite.Org_details_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.Org_details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_details_Test@5ed731d0</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.User_credentail_Test.org_details()'><b>org_details</b><br>Test class: test_suite.User_credentail_Test</td>
+<td></td>
+<td>1</td>
+<td>test_suite.User_credentail_Test@40e10ff8</td></tr>
+<tr>
+<td title='test_suite.Personal_pan_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.Personal_pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_pan_Test@3234f74e</td></tr>
+<tr>
+<td title='test_suite.Org_details_Test.org_details()'><b>org_details</b><br>Test class: test_suite.Org_details_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Org_details_Test@5ed731d0</td></tr>
+<tr>
+<td title='test_suite.Org_details_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.Org_details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_details_Test@5ed731d0</td></tr>
+<tr>
+<td title='test_suite.Org_details_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Org_details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_details_Test@5ed731d0</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@269f4bad</td></tr>
+</table><p>
+</body>
+</html>

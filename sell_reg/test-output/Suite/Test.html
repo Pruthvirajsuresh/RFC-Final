@@ -1,0 +1,711 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>81/3/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Apr 04 11:37:32 IST 2022</td>
+</tr>
+<tr><td>Total time:</td><td>339 seconds (339639 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_suite.Bank_Account_Test.bank_act_validation()'><b>bank_act_validation</b><br>Test class: test_suite.Bank_Account_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;mismatch ng-scope&apos;]&quot;}
+  (Session info: chrome=98.0.4758.80)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;pruthviraj&apos;, ip: &apos;10.20.10.145&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.14.0-1031-oem&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.eshH2t}, goog:chromeOptions: {debuggerAddress: localhost:45557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 44f7257f207667660b4f0279899be70b
+*** Element info: {Using=xpath, value=//span[@class=&apos;mismatch ng-scope&apos;]}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at page_objects.Bank_acc_page.get_validation_error_symbol(Bank_acc_page.java:79)
+	at testcase_methods.Bank_account_.bank_acc_validation(Bank_account_.java:103)
+	at test_suite.Bank_Account_Test.bank_act_validation(Bank_Account_Test.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace201291340", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace201291340'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@class=&apos;mismatch ng-scope&apos;]&quot;}
+  (Session info: chrome=98.0.4758.80)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;pruthviraj&apos;, ip: &apos;10.20.10.145&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.14.0-1031-oem&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.eshH2t}, goog:chromeOptions: {debuggerAddress: localhost:45557}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 44f7257f207667660b4f0279899be70b
+*** Element info: {Using=xpath, value=//span[@class=&apos;mismatch ng-scope&apos;]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at page_objects.Bank_acc_page.get_validation_error_symbol(Bank_acc_page.java:79)
+	at testcase_methods.Bank_account_.bank_acc_validation(Bank_account_.java:103)
+	at test_suite.Bank_Account_Test.bank_act_validation(Bank_Account_Test.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>24</td>
+<td>test_suite.Bank_Account_Test@3ad394e6</td></tr>
+<tr>
+<td title='test_suite.Office_Location_Test.Office_location_validation()'><b>Office_location_validation</b><br>Test class: test_suite.Office_Location_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: General Zone
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;pruthviraj&apos;, ip: &apos;10.20.10.145&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.14.0-1031-oem&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at testcase_methods.Office_location_.office_location_create(Office_location_.java:117)
+	at test_suite.Office_Location_Test.Office_location_validation(Office_Location_Test.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace546392117", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace546392117'><pre>org.openqa.selenium.NoSuchElementException: Cannot locate element with text: General Zone
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;pruthviraj&apos;, ip: &apos;10.20.10.145&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.14.0-1031-oem&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:147)
+	at testcase_methods.Office_location_.office_location_create(Office_location_.java:117)
+	at test_suite.Office_Location_Test.Office_location_validation(Office_Location_Test.java:21)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>52</td>
+<td>test_suite.Office_Location_Test@1a38ba58</td></tr>
+<tr>
+<td title='test_suite.Documents_Test.doc_validate1()'><b>doc_validate1</b><br>Test class: test_suite.Documents_Test</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#bd &gt; div &gt; div &gt; div &gt; seller-profile-component &gt; div.sellerprofile.col-md-12.ng-scope &gt; div.panel-wrapper.ng-scope &gt; h2 &gt; span &gt; span &gt; span &gt; button&quot;}
+  (Session info: chrome=98.0.4758.80)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;pruthviraj&apos;, ip: &apos;10.20.10.145&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.14.0-1031-oem&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.ILqIey}, goog:chromeOptions: {debuggerAddress: localhost:46065}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f47482ca310af60ecc6d8ae70c857462
+*** Element info: {Using=css selector, value=#bd &gt; div &gt; div &gt; div &gt; seller-profile-component &gt; div.sellerprofile.col-md-12.ng-scope &gt; div.panel-wrapper.ng-scope &gt; h2 &gt; span &gt; span &gt; span &gt; button}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at page_objects.Documents_page.get_request_for_approval_btn(Documents_page.java:70)
+	at testcase_methods.Documents_.doc_validate(Documents_.java:290)
+	at test_suite.Documents_Test.doc_validate1(Documents_Test.java:22)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1653786174", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1653786174'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#bd &gt; div &gt; div &gt; div &gt; seller-profile-component &gt; div.sellerprofile.col-md-12.ng-scope &gt; div.panel-wrapper.ng-scope &gt; h2 &gt; span &gt; span &gt; span &gt; button&quot;}
+  (Session info: chrome=98.0.4758.80)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;pruthviraj&apos;, ip: &apos;10.20.10.145&apos;, os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.14.0-1031-oem&apos;, java.version: &apos;15.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.ILqIey}, goog:chromeOptions: {debuggerAddress: localhost:46065}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: f47482ca310af60ecc6d8ae70c857462
+*** Element info: {Using=css selector, value=#bd &gt; div &gt; div &gt; div &gt; seller-profile-component &gt; div.sellerprofile.col-md-12.ng-scope &gt; div.panel-wrapper.ng-scope &gt; h2 &gt; span &gt; span &gt; span &gt; button}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByCssSelector(RemoteWebDriver.java:420)
+	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:431)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at page_objects.Documents_page.get_request_for_approval_btn(Documents_page.java:70)
+	at testcase_methods.Documents_.doc_validate(Documents_.java:290)
+	at test_suite.Documents_Test.doc_validate1(Documents_Test.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>97</td>
+<td>test_suite.Documents_Test@1deb2c43</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='test_suite.Data_driven_login_Test.login_screen()'><b>login_screen</b><br>Test class: test_suite.Data_driven_login_Test<br>Parameters: correct_username, seller1, Pruthvi@1234</td>
+<td></td>
+<td>4</td>
+<td>test_suite.Data_driven_login_Test@3aaf4f07</td></tr>
+<tr>
+<td title='test_suite.Bank_Account_Test.log_in_seller()'><b>log_in_seller</b><br>Test class: test_suite.Bank_Account_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Bank_Account_Test@3ad394e6</td></tr>
+<tr>
+<td title='test_suite.Email_Id_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.Email_Id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_Id_Test@27dc79f7</td></tr>
+<tr>
+<td title='test_suite.Email_Id_Test.org_details()'><b>org_details</b><br>Test class: test_suite.Email_Id_Test</td>
+<td></td>
+<td>1</td>
+<td>test_suite.Email_Id_Test@27dc79f7</td></tr>
+<tr>
+<td title='test_suite.Admin_Login_Test.log_in_admin()'><b>log_in_admin</b><br>Test class: test_suite.Admin_Login_Test</td>
+<td></td>
+<td>4</td>
+<td>test_suite.Admin_Login_Test@3bb9efbc</td></tr>
+<tr>
+<td title='test_suite.Mobile_Num_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Mobile_Num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_Num_Test@6831d8fd</td></tr>
+<tr>
+<td title='test_suite.Org_Details_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Org_Details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_Details_Test@74d7184a</td></tr>
+<tr>
+<td title='test_suite.Cin_Validate_Test.Cin_no_valid()'><b>Cin_no_valid</b><br>Test class: test_suite.Cin_Validate_Test</td>
+<td></td>
+<td>6</td>
+<td>test_suite.Cin_Validate_Test@18e8473e</td></tr>
+<tr>
+<td title='test_suite.Documents_Test.log_in_seller()'><b>log_in_seller</b><br>Test class: test_suite.Documents_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Documents_Test@1deb2c43</td></tr>
+<tr>
+<td title='test_suite.Business_Pan_Test.bus_pan_validation()'><b>bus_pan_validation</b><br>Test class: test_suite.Business_Pan_Test</td>
+<td></td>
+<td>5</td>
+<td>test_suite.Business_Pan_Test@5cbf9e9f</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.Email_Id_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Email_Id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_Id_Test@27dc79f7</td></tr>
+<tr>
+<td title='test_suite.Org_Details_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.Org_Details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_Details_Test@74d7184a</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.Personal_Pan_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Personal_Pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_Pan_Test@51b01960</td></tr>
+<tr>
+<td title='test_suite.Email_Id_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.Email_Id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_Id_Test@27dc79f7</td></tr>
+<tr>
+<td title='test_suite.Terms_Condition_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Terms_Condition_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Terms_Condition_Test@12f3afb5</td></tr>
+<tr>
+<td title='test_suite.Mobile_Num_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Mobile_Num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_Num_Test@6831d8fd</td></tr>
+<tr>
+<td title='test_suite.Terms_Condition_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Terms_Condition_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Terms_Condition_Test@12f3afb5</td></tr>
+<tr>
+<td title='test_suite.My_Catagories_Test.my_catagory_validation()'><b>my_catagory_validation</b><br>Test class: test_suite.My_Catagories_Test</td>
+<td></td>
+<td>5</td>
+<td>test_suite.My_Catagories_Test@6058e535</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.My_Catagories_Test.log_in_seller()'><b>log_in_seller</b><br>Test class: test_suite.My_Catagories_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.My_Catagories_Test@6058e535</td></tr>
+<tr>
+<td title='test_suite.Personal_Pan_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Personal_Pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_Pan_Test@51b01960</td></tr>
+<tr>
+<td title='test_suite.Mobile_Num_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.Mobile_Num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_Num_Test@6831d8fd</td></tr>
+<tr>
+<td title='test_suite.Org_Details_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Org_Details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_Details_Test@74d7184a</td></tr>
+<tr>
+<td title='test_suite.Terms_Condition_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Terms_Condition_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Terms_Condition_Test@12f3afb5</td></tr>
+<tr>
+<td title='test_suite.Personal_Pan_Test.org_details()'><b>org_details</b><br>Test class: test_suite.Personal_Pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_Pan_Test@51b01960</td></tr>
+<tr>
+<td title='test_suite.Email_Id_Test.mobile_verfy()'><b>mobile_verfy</b><br>Test class: test_suite.Email_Id_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Email_Id_Test@27dc79f7</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.Org_Details_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.Org_Details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_Details_Test@74d7184a</td></tr>
+<tr>
+<td title='test_suite.Email_Id_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Email_Id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_Id_Test@27dc79f7</td></tr>
+<tr>
+<td title='test_suite.Office_Location_Test.log_in_seller()'><b>log_in_seller</b><br>Test class: test_suite.Office_Location_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Office_Location_Test@1a38ba58</td></tr>
+<tr>
+<td title='test_suite.Mobile_Num_Test.per_pan_validation()'><b>per_pan_validation</b><br>Test class: test_suite.Mobile_Num_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Mobile_Num_Test@6831d8fd</td></tr>
+<tr>
+<td title='test_suite.Mobile_Num_Test.mobile_verfy()'><b>mobile_verfy</b><br>Test class: test_suite.Mobile_Num_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Mobile_Num_Test@6831d8fd</td></tr>
+<tr>
+<td title='test_suite.Cin_Validate_Test.log_in_seller()'><b>log_in_seller</b><br>Test class: test_suite.Cin_Validate_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Cin_Validate_Test@18e8473e</td></tr>
+<tr>
+<td title='test_suite.Bill_Plan_Test.log_in_seller()'><b>log_in_seller</b><br>Test class: test_suite.Bill_Plan_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Bill_Plan_Test@42deb43a</td></tr>
+<tr>
+<td title='test_suite.Company_Details_Test.log_in_seller()'><b>log_in_seller</b><br>Test class: test_suite.Company_Details_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Company_Details_Test@5a2f016d</td></tr>
+<tr>
+<td title='test_suite.Mobile_Num_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Mobile_Num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_Num_Test@6831d8fd</td></tr>
+<tr>
+<td title='test_suite.Email_Id_Test.per_pan_validation()'><b>per_pan_validation</b><br>Test class: test_suite.Email_Id_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Email_Id_Test@27dc79f7</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.Terms_Condition_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Terms_Condition_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Terms_Condition_Test@12f3afb5</td></tr>
+<tr>
+<td title='test_suite.Org_Details_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Org_Details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_Details_Test@74d7184a</td></tr>
+<tr>
+<td title='test_suite.Email_Id_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Email_Id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_Id_Test@27dc79f7</td></tr>
+<tr>
+<td title='test_suite.Mobile_Num_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.Mobile_Num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_Num_Test@6831d8fd</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@7bd69e82</td></tr>
+<tr>
+<td title='test_suite.Org_Details_Test.org_details()'><b>org_details</b><br>Test class: test_suite.Org_Details_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Org_Details_Test@74d7184a</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@7bd69e82</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.mobile_verfy()'><b>mobile_verfy</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.Personal_Pan_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Personal_Pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_Pan_Test@51b01960</td></tr>
+<tr>
+<td title='test_suite.Data_driven_login_Test.login_screen()'><b>login_screen</b><br>Test class: test_suite.Data_driven_login_Test<br>Parameters: both_correct, sit@seller60, Ril@1234</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Data_driven_login_Test@3aaf4f07</td></tr>
+<tr>
+<td title='test_suite.Personal_Pan_Test.per_pan_validation()'><b>per_pan_validation</b><br>Test class: test_suite.Personal_Pan_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Personal_Pan_Test@51b01960</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.email_vrf()'><b>email_vrf</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>6</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.Personal_Pan_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.Personal_Pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_Pan_Test@51b01960</td></tr>
+<tr>
+<td title='test_suite.Personal_Pan_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.Personal_Pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_Pan_Test@51b01960</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.Org_Details_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.Org_Details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_Details_Test@74d7184a</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.org_details()'><b>org_details</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.Data_driven_login_Test.login_screen()'><b>login_screen</b><br>Test class: test_suite.Data_driven_login_Test<br>Parameters: both_wrong, automatedseller, pu@tu</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Data_driven_login_Test@3aaf4f07</td></tr>
+<tr>
+<td title='test_suite.Email_Id_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.Email_Id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_Id_Test@27dc79f7</td></tr>
+<tr>
+<td title='test_suite.Company_Details_Test.company_details_validation()'><b>company_details_validation</b><br>Test class: test_suite.Company_Details_Test</td>
+<td></td>
+<td>4</td>
+<td>test_suite.Company_Details_Test@5a2f016d</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Invitation_Code_Test@7bd69e82</td></tr>
+<tr>
+<td title='test_suite.Email_Id_Test.email_vrf()'><b>email_vrf</b><br>Test class: test_suite.Email_Id_Test</td>
+<td></td>
+<td>6</td>
+<td>test_suite.Email_Id_Test@27dc79f7</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.per_pan_validation()'><b>per_pan_validation</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.User_Credentials_Test.seller_cred()'><b>seller_cred</b><br>Test class: test_suite.User_Credentials_Test</td>
+<td></td>
+<td>6</td>
+<td>test_suite.User_Credentials_Test@6b85300e</td></tr>
+<tr>
+<td title='test_suite.Data_driven_login_Test.login_screen()'><b>login_screen</b><br>Test class: test_suite.Data_driven_login_Test<br>Parameters: correct_password, sellernon, Ril@1234</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Data_driven_login_Test@3aaf4f07</td></tr>
+<tr>
+<td title='test_suite.Landing_Page_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Landing_Page_Test</td>
+<td></td>
+<td>2</td>
+<td>test_suite.Landing_Page_Test@1dfd5f51</td></tr>
+<tr>
+<td title='test_suite.Personal_Pan_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Personal_Pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_Pan_Test@51b01960</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.logo_validation()'><b>logo_validation</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@7bd69e82</td></tr>
+<tr>
+<td title='test_suite.Email_Id_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Email_Id_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Email_Id_Test@27dc79f7</td></tr>
+<tr>
+<td title='test_suite.Org_Details_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Org_Details_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Org_Details_Test@74d7184a</td></tr>
+<tr>
+<td title='test_suite.Mobile_Num_Test.org_details()'><b>org_details</b><br>Test class: test_suite.Mobile_Num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_Num_Test@6831d8fd</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.term_checkbox()'><b>term_checkbox</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@7bd69e82</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.review_confirm()'><b>review_confirm</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@7bd69e82</td></tr>
+<tr>
+<td title='test_suite.Mobile_Num_Test.subit_in_code()'><b>subit_in_code</b><br>Test class: test_suite.Mobile_Num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_Num_Test@6831d8fd</td></tr>
+<tr>
+<td title='test_suite.Bill_Plan_Test.bill_plan_validation()'><b>bill_plan_validation</b><br>Test class: test_suite.Bill_Plan_Test</td>
+<td></td>
+<td>11</td>
+<td>test_suite.Bill_Plan_Test@42deb43a</td></tr>
+<tr>
+<td title='test_suite.Landing_Page_Test.title_validation()'><b>title_validation</b><br>Test class: test_suite.Landing_Page_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Landing_Page_Test@1dfd5f51</td></tr>
+<tr>
+<td title='test_suite.Personal_Pan_Test.invitation_code()'><b>invitation_code</b><br>Test class: test_suite.Personal_Pan_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Personal_Pan_Test@51b01960</td></tr>
+<tr>
+<td title='test_suite.Invitation_Code_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Invitation_Code_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Invitation_Code_Test@7bd69e82</td></tr>
+<tr>
+<td title='test_suite.Business_Pan_Test.log_in_seller()'><b>log_in_seller</b><br>Test class: test_suite.Business_Pan_Test</td>
+<td></td>
+<td>3</td>
+<td>test_suite.Business_Pan_Test@5cbf9e9f</td></tr>
+<tr>
+<td title='test_suite.Mobile_Num_Test.t_c_validation()'><b>t_c_validation</b><br>Test class: test_suite.Mobile_Num_Test</td>
+<td></td>
+<td>0</td>
+<td>test_suite.Mobile_Num_Test@6831d8fd</td></tr>
+</table><p>
+</body>
+</html>
