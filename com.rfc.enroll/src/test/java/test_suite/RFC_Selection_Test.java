@@ -62,7 +62,7 @@ public class RFC_Selection_Test extends Base {
 			String name_of_the_rfc = check.getText();
 			System.out.println(name_of_the_rfc);
 
-			if (name_of_the_rfc.contains("HUB-COD-01 HUB Code RFC")) {
+			if (name_of_the_rfc.contains("RFC-MH-05 Maharastra RFC")) {
 				check.click();
 
 				log.info("RFC is selected");
