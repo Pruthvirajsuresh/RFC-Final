@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="86" passed="84" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-04-20T11:26:52 IST" name="Suite" finished-at="2022-04-20T11:32:00 IST" duration-ms="308227">
+    <groups>
+    </groups>
+    <test started-at="2022-04-20T11:26:52 IST" name="Test" finished-at="2022-04-20T11:32:00 IST" duration-ms="308227">
+      <class name="test_suite.Office_Location_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Office_Location_Test@6058e535]" started-at="2022-04-20T11:28:49 IST" name="setup" finished-at="2022-04-20T11:28:50 IST" duration-ms="1594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="log_in_seller()[pri:1, instance:test_suite.Office_Location_Test@6058e535]" started-at="2022-04-20T11:28:50 IST" name="log_in_seller" finished-at="2022-04-20T11:28:53 IST" duration-ms="3159" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_in_seller -->
+        <test-method signature="Office_location_validation()[pri:2, instance:test_suite.Office_Location_Test@6058e535]" started-at="2022-04-20T11:28:53 IST" name="Office_location_validation" finished-at="2022-04-20T11:29:09 IST" duration-ms="15582" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Office_location_validation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Office_Location_Test@6058e535]" started-at="2022-04-20T11:29:09 IST" name="teardown" finished-at="2022-04-20T11:29:09 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Office_Location_Test -->
+      <class name="test_suite.Seller_Approval_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Seller_Approval_Test@6f6a7463]" started-at="2022-04-20T11:31:32 IST" name="setup" finished-at="2022-04-20T11:31:33 IST" duration-ms="1397" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="log_in_admin()[pri:1, instance:test_suite.Seller_Approval_Test@6f6a7463]" started-at="2022-04-20T11:31:33 IST" name="log_in_admin" finished-at="2022-04-20T11:31:38 IST" duration-ms="4987" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_in_admin -->
+        <test-method signature="seller_approval()[pri:2, instance:test_suite.Seller_Approval_Test@6f6a7463]" started-at="2022-04-20T11:31:38 IST" name="seller_approval" finished-at="2022-04-20T11:32:00 IST" duration-ms="22234" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//addresses[@addresses='seller.addresses']/div/div[2]/table/tbody/tr/td[9]/span/button[1]"}
+  (Session info: chrome=98.0.4758.80)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'pruthviraj', ip: '10.20.10.145', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.exQwt1}, goog:chromeOptions: {debuggerAddress: localhost:43433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 906893433db4cf41c42500f39a1bd12f
+*** Element info: {Using=xpath, value=//addresses[@addresses='seller.addresses']/div/div[2]/table/tbody/tr/td[9]/span/button[1]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//addresses[@addresses='seller.addresses']/div/div[2]/table/tbody/tr/td[9]/span/button[1]"}
+  (Session info: chrome=98.0.4758.80)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'pruthviraj', ip: '10.20.10.145', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.exQwt1}, goog:chromeOptions: {debuggerAddress: localhost:43433}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 906893433db4cf41c42500f39a1bd12f
+*** Element info: {Using=xpath, value=//addresses[@addresses='seller.addresses']/div/div[2]/table/tbody/tr/td[9]/span/button[1]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at page_objects.Seller_approval_page.get_approve_fssai_doc(Seller_approval_page.java:67)
+at testcase_methods.Seller_approval_.seller_approval(Seller_approval_.java:23)
+at test_suite.Seller_Approval_Test.seller_approval(Seller_Approval_Test.java:20)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seller_approval -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Seller_Approval_Test@6f6a7463]" started-at="2022-04-20T11:32:00 IST" name="teardown" finished-at="2022-04-20T11:32:00 IST" duration-ms="76" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Seller_Approval_Test -->
+      <class name="test_suite.Bank_Account_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Bank_Account_Test@42deb43a]" started-at="2022-04-20T11:29:09 IST" name="setup" finished-at="2022-04-20T11:29:10 IST" duration-ms="1437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="log_in_seller()[pri:1, instance:test_suite.Bank_Account_Test@42deb43a]" started-at="2022-04-20T11:29:10 IST" name="log_in_seller" finished-at="2022-04-20T11:29:14 IST" duration-ms="3181" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_in_seller -->
+        <test-method signature="bank_act_validation()[pri:2, instance:test_suite.Bank_Account_Test@42deb43a]" started-at="2022-04-20T11:29:14 IST" name="bank_act_validation" finished-at="2022-04-20T11:29:38 IST" duration-ms="24183" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='mismatch ng-scope']"}
+  (Session info: chrome=98.0.4758.80)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'pruthviraj', ip: '10.20.10.145', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.9da8xk}, goog:chromeOptions: {debuggerAddress: localhost:36645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4647212d0ab979f661d0c8c6beaae30
+*** Element info: {Using=xpath, value=//span[@class='mismatch ng-scope']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@class='mismatch ng-scope']"}
+  (Session info: chrome=98.0.4758.80)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'pruthviraj', ip: '10.20.10.145', os.name: 'Linux', os.arch: 'amd64', os.version: '5.14.0-1031-oem', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 98.0.4758.80, chrome: {chromedriverVersion: 98.0.4758.80 (7f0488e8ba0d8..., userDataDir: /tmp/.com.google.Chrome.9da8xk}, goog:chromeOptions: {debuggerAddress: localhost:36645}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: a4647212d0ab979f661d0c8c6beaae30
+*** Element info: {Using=xpath, value=//span[@class='mismatch ng-scope']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at page_objects.Bank_acc_page.get_validation_error_symbol(Bank_acc_page.java:79)
+at testcase_methods.Bank_account_.bank_acc_validation(Bank_account_.java:103)
+at test_suite.Bank_Account_Test.bank_act_validation(Bank_Account_Test.java:22)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bank_act_validation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Bank_Account_Test@42deb43a]" started-at="2022-04-20T11:29:38 IST" name="teardown" finished-at="2022-04-20T11:29:38 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Bank_Account_Test -->
+      <class name="test_suite.Email_Id_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:26 IST" name="setup" finished-at="2022-04-20T11:27:27 IST" duration-ms="1426" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="title_validation()[pri:1, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:27 IST" name="title_validation" finished-at="2022-04-20T11:27:27 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title_validation -->
+        <test-method signature="logo_validation()[pri:2, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:27 IST" name="logo_validation" finished-at="2022-04-20T11:27:27 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logo_validation -->
+        <test-method signature="t_c_validation()[pri:3, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:27 IST" name="t_c_validation" finished-at="2022-04-20T11:27:27 IST" duration-ms="113" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t_c_validation -->
+        <test-method signature="term_checkbox()[pri:4, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:27 IST" name="term_checkbox" finished-at="2022-04-20T11:27:28 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- term_checkbox -->
+        <test-method signature="review_confirm()[pri:5, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:28 IST" name="review_confirm" finished-at="2022-04-20T11:27:28 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- review_confirm -->
+        <test-method signature="invitation_code()[pri:6, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:28 IST" name="invitation_code" finished-at="2022-04-20T11:27:28 IST" duration-ms="292" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invitation_code -->
+        <test-method signature="subit_in_code()[pri:7, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:28 IST" name="subit_in_code" finished-at="2022-04-20T11:27:28 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subit_in_code -->
+        <test-method signature="org_details()[pri:8, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:28 IST" name="org_details" finished-at="2022-04-20T11:27:29 IST" duration-ms="981" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- org_details -->
+        <test-method signature="per_pan_validation()[pri:9, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:29 IST" name="per_pan_validation" finished-at="2022-04-20T11:27:32 IST" duration-ms="2518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- per_pan_validation -->
+        <test-method signature="mobile_verfy()[pri:10, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:32 IST" name="mobile_verfy" finished-at="2022-04-20T11:27:35 IST" duration-ms="3792" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_verfy -->
+        <test-method signature="email_vrf()[pri:11, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:35 IST" name="email_vrf" finished-at="2022-04-20T11:27:42 IST" duration-ms="6393" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- email_vrf -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Email_Id_Test@3aaf4f07]" started-at="2022-04-20T11:27:42 IST" name="teardown" finished-at="2022-04-20T11:27:42 IST" duration-ms="86" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Email_Id_Test -->
+      <class name="test_suite.Data_driven_login_Test">
+        <test-method signature="login_screen(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_suite.Data_driven_login_Test@18e8473e]" started-at="2022-04-20T11:28:05 IST" name="login_screen" data-provider="credentails" finished-at="2022-04-20T11:28:08 IST" duration-ms="3264" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[both_correct]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sit@seller60]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ril@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_screen -->
+        <test-method signature="login_screen(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_suite.Data_driven_login_Test@18e8473e]" started-at="2022-04-20T11:28:08 IST" name="login_screen" data-provider="credentails" finished-at="2022-04-20T11:28:11 IST" duration-ms="3474" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[both_wrong]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[automatedseller]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[pu@tu]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_screen -->
+        <test-method signature="login_screen(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_suite.Data_driven_login_Test@18e8473e]" started-at="2022-04-20T11:28:11 IST" name="login_screen" data-provider="credentails" finished-at="2022-04-20T11:28:15 IST" duration-ms="3426" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[correct_username]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[seller1]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Pruthvi@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_screen -->
+        <test-method signature="login_screen(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:test_suite.Data_driven_login_Test@18e8473e]" started-at="2022-04-20T11:28:15 IST" name="login_screen" data-provider="credentails" finished-at="2022-04-20T11:28:18 IST" duration-ms="3601" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[correct_password]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[sellernon]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Ril@1234]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login_screen -->
+      </class> <!-- test_suite.Data_driven_login_Test -->
+      <class name="test_suite.Terms_Condition_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Terms_Condition_Test@2c22a348]" started-at="2022-04-20T11:26:56 IST" name="setup" finished-at="2022-04-20T11:26:58 IST" duration-ms="1349" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="title_validation()[pri:1, instance:test_suite.Terms_Condition_Test@2c22a348]" started-at="2022-04-20T11:26:58 IST" name="title_validation" finished-at="2022-04-20T11:26:58 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title_validation -->
+        <test-method signature="logo_validation()[pri:2, instance:test_suite.Terms_Condition_Test@2c22a348]" started-at="2022-04-20T11:26:58 IST" name="logo_validation" finished-at="2022-04-20T11:26:58 IST" duration-ms="46" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logo_validation -->
+        <test-method signature="t_c_validation()[pri:3, instance:test_suite.Terms_Condition_Test@2c22a348]" started-at="2022-04-20T11:26:58 IST" name="t_c_validation" finished-at="2022-04-20T11:27:00 IST" duration-ms="2334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t_c_validation -->
+        <test-method signature="term_checkbox()[pri:4, instance:test_suite.Terms_Condition_Test@2c22a348]" started-at="2022-04-20T11:27:00 IST" name="term_checkbox" finished-at="2022-04-20T11:27:00 IST" duration-ms="24" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- term_checkbox -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Terms_Condition_Test@2c22a348]" started-at="2022-04-20T11:27:00 IST" name="teardown" finished-at="2022-04-20T11:27:00 IST" duration-ms="126" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Terms_Condition_Test -->
+      <class name="test_suite.Landing_Page_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Landing_Page_Test@24855019]" started-at="2022-04-20T11:26:52 IST" name="setup" finished-at="2022-04-20T11:26:54 IST" duration-ms="1935" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="title_validation()[pri:1, instance:test_suite.Landing_Page_Test@24855019]" started-at="2022-04-20T11:26:54 IST" name="title_validation" finished-at="2022-04-20T11:26:54 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title_validation -->
+        <test-method signature="logo_validation()[pri:2, instance:test_suite.Landing_Page_Test@24855019]" started-at="2022-04-20T11:26:54 IST" name="logo_validation" finished-at="2022-04-20T11:26:56 IST" duration-ms="2304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logo_validation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Landing_Page_Test@24855019]" started-at="2022-04-20T11:26:56 IST" name="teardown" finished-at="2022-04-20T11:26:56 IST" duration-ms="70" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Landing_Page_Test -->
+      <class name="test_suite.Org_Details_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Org_Details_Test@6831d8fd]" started-at="2022-04-20T11:27:05 IST" name="setup" finished-at="2022-04-20T11:27:06 IST" duration-ms="1332" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="title_validation()[pri:1, instance:test_suite.Org_Details_Test@6831d8fd]" started-at="2022-04-20T11:27:06 IST" name="title_validation" finished-at="2022-04-20T11:27:06 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title_validation -->
+        <test-method signature="logo_validation()[pri:2, instance:test_suite.Org_Details_Test@6831d8fd]" started-at="2022-04-20T11:27:06 IST" name="logo_validation" finished-at="2022-04-20T11:27:06 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logo_validation -->
+        <test-method signature="t_c_validation()[pri:3, instance:test_suite.Org_Details_Test@6831d8fd]" started-at="2022-04-20T11:27:06 IST" name="t_c_validation" finished-at="2022-04-20T11:27:06 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t_c_validation -->
+        <test-method signature="term_checkbox()[pri:4, instance:test_suite.Org_Details_Test@6831d8fd]" started-at="2022-04-20T11:27:06 IST" name="term_checkbox" finished-at="2022-04-20T11:27:06 IST" duration-ms="85" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- term_checkbox -->
+        <test-method signature="review_confirm()[pri:5, instance:test_suite.Org_Details_Test@6831d8fd]" started-at="2022-04-20T11:27:06 IST" name="review_confirm" finished-at="2022-04-20T11:27:06 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- review_confirm -->
+        <test-method signature="invitation_code()[pri:6, instance:test_suite.Org_Details_Test@6831d8fd]" started-at="2022-04-20T11:27:06 IST" name="invitation_code" finished-at="2022-04-20T11:27:07 IST" duration-ms="304" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invitation_code -->
+        <test-method signature="subit_in_code()[pri:7, instance:test_suite.Org_Details_Test@6831d8fd]" started-at="2022-04-20T11:27:07 IST" name="subit_in_code" finished-at="2022-04-20T11:27:07 IST" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subit_in_code -->
+        <test-method signature="org_details()[pri:8, instance:test_suite.Org_Details_Test@6831d8fd]" started-at="2022-04-20T11:27:07 IST" name="org_details" finished-at="2022-04-20T11:27:10 IST" duration-ms="3305" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- org_details -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Org_Details_Test@6831d8fd]" started-at="2022-04-20T11:27:10 IST" name="teardown" finished-at="2022-04-20T11:27:10 IST" duration-ms="87" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Org_Details_Test -->
+      <class name="test_suite.Business_Pan_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Business_Pan_Test@5a2f016d]" started-at="2022-04-20T11:28:18 IST" name="setup" finished-at="2022-04-20T11:28:20 IST" duration-ms="1519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="log_in_seller()[pri:1, instance:test_suite.Business_Pan_Test@5a2f016d]" started-at="2022-04-20T11:28:20 IST" name="log_in_seller" finished-at="2022-04-20T11:28:23 IST" duration-ms="3219" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_in_seller -->
+        <test-method signature="bus_pan_validation()[pri:2, instance:test_suite.Business_Pan_Test@5a2f016d]" started-at="2022-04-20T11:28:23 IST" name="bus_pan_validation" finished-at="2022-04-20T11:28:28 IST" duration-ms="4845" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bus_pan_validation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Business_Pan_Test@5a2f016d]" started-at="2022-04-20T11:28:28 IST" name="teardown" finished-at="2022-04-20T11:28:28 IST" duration-ms="82" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Business_Pan_Test -->
+      <class name="test_suite.Documents_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Documents_Test@1cefc4b3]" started-at="2022-04-20T11:30:00 IST" name="setup" finished-at="2022-04-20T11:30:01 IST" duration-ms="1485" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="log_in_seller()[pri:1, instance:test_suite.Documents_Test@1cefc4b3]" started-at="2022-04-20T11:30:01 IST" name="log_in_seller" finished-at="2022-04-20T11:30:05 IST" duration-ms="3526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_in_seller -->
+        <test-method signature="doc_validate1()[pri:2, instance:test_suite.Documents_Test@1cefc4b3]" started-at="2022-04-20T11:30:05 IST" name="doc_validate1" finished-at="2022-04-20T11:31:26 IST" duration-ms="80945" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doc_validate1 -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Documents_Test@1cefc4b3]" started-at="2022-04-20T11:31:26 IST" name="teardown" finished-at="2022-04-20T11:31:26 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Documents_Test -->
+      <class name="test_suite.Company_Details_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Company_Details_Test@3ad394e6]" started-at="2022-04-20T11:28:39 IST" name="setup" finished-at="2022-04-20T11:28:41 IST" duration-ms="1462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="log_in_seller()[pri:1, instance:test_suite.Company_Details_Test@3ad394e6]" started-at="2022-04-20T11:28:41 IST" name="log_in_seller" finished-at="2022-04-20T11:28:44 IST" duration-ms="3112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_in_seller -->
+        <test-method signature="company_details_validation()[pri:2, instance:test_suite.Company_Details_Test@3ad394e6]" started-at="2022-04-20T11:28:44 IST" name="company_details_validation" finished-at="2022-04-20T11:28:49 IST" duration-ms="4629" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- company_details_validation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Company_Details_Test@3ad394e6]" started-at="2022-04-20T11:28:49 IST" name="teardown" finished-at="2022-04-20T11:28:49 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Company_Details_Test -->
+      <class name="test_suite.User_Credentials_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:42 IST" name="setup" finished-at="2022-04-20T11:27:43 IST" duration-ms="1433" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="title_validation()[pri:1, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:43 IST" name="title_validation" finished-at="2022-04-20T11:27:43 IST" duration-ms="14" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title_validation -->
+        <test-method signature="logo_validation()[pri:2, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:43 IST" name="logo_validation" finished-at="2022-04-20T11:27:43 IST" duration-ms="102" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logo_validation -->
+        <test-method signature="t_c_validation()[pri:3, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:43 IST" name="t_c_validation" finished-at="2022-04-20T11:27:44 IST" duration-ms="139" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t_c_validation -->
+        <test-method signature="term_checkbox()[pri:4, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:44 IST" name="term_checkbox" finished-at="2022-04-20T11:27:44 IST" duration-ms="74" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- term_checkbox -->
+        <test-method signature="review_confirm()[pri:5, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:44 IST" name="review_confirm" finished-at="2022-04-20T11:27:44 IST" duration-ms="100" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- review_confirm -->
+        <test-method signature="invitation_code()[pri:6, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:44 IST" name="invitation_code" finished-at="2022-04-20T11:27:44 IST" duration-ms="284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invitation_code -->
+        <test-method signature="subit_in_code()[pri:7, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:44 IST" name="subit_in_code" finished-at="2022-04-20T11:27:44 IST" duration-ms="141" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subit_in_code -->
+        <test-method signature="org_details()[pri:8, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:44 IST" name="org_details" finished-at="2022-04-20T11:27:45 IST" duration-ms="1049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- org_details -->
+        <test-method signature="per_pan_validation()[pri:9, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:45 IST" name="per_pan_validation" finished-at="2022-04-20T11:27:48 IST" duration-ms="2586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- per_pan_validation -->
+        <test-method signature="mobile_verfy()[pri:10, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:48 IST" name="mobile_verfy" finished-at="2022-04-20T11:27:52 IST" duration-ms="3871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_verfy -->
+        <test-method signature="email_vrf()[pri:11, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:52 IST" name="email_vrf" finished-at="2022-04-20T11:27:58 IST" duration-ms="6431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- email_vrf -->
+        <test-method signature="seller_cred()[pri:12, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:27:58 IST" name="seller_cred" finished-at="2022-04-20T11:28:05 IST" duration-ms="6455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seller_cred -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.User_Credentials_Test@5cbf9e9f]" started-at="2022-04-20T11:28:05 IST" name="teardown" finished-at="2022-04-20T11:28:05 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.User_Credentials_Test -->
+      <class name="test_suite.My_Catagories_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.My_Catagories_Test@1deb2c43]" started-at="2022-04-20T11:29:38 IST" name="setup" finished-at="2022-04-20T11:29:39 IST" duration-ms="1529" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="log_in_seller()[pri:1, instance:test_suite.My_Catagories_Test@1deb2c43]" started-at="2022-04-20T11:29:39 IST" name="log_in_seller" finished-at="2022-04-20T11:29:43 IST" duration-ms="3170" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_in_seller -->
+        <test-method signature="my_catagory_validation()[pri:2, instance:test_suite.My_Catagories_Test@1deb2c43]" started-at="2022-04-20T11:29:43 IST" name="my_catagory_validation" finished-at="2022-04-20T11:29:49 IST" duration-ms="6155" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- my_catagory_validation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.My_Catagories_Test@1deb2c43]" started-at="2022-04-20T11:29:49 IST" name="teardown" finished-at="2022-04-20T11:29:49 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.My_Catagories_Test -->
+      <class name="test_suite.Personal_Pan_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Personal_Pan_Test@27dc79f7]" started-at="2022-04-20T11:27:10 IST" name="setup" finished-at="2022-04-20T11:27:12 IST" duration-ms="1374" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="title_validation()[pri:1, instance:test_suite.Personal_Pan_Test@27dc79f7]" started-at="2022-04-20T11:27:12 IST" name="title_validation" finished-at="2022-04-20T11:27:12 IST" duration-ms="12" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title_validation -->
+        <test-method signature="logo_validation()[pri:2, instance:test_suite.Personal_Pan_Test@27dc79f7]" started-at="2022-04-20T11:27:12 IST" name="logo_validation" finished-at="2022-04-20T11:27:12 IST" duration-ms="97" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logo_validation -->
+        <test-method signature="t_c_validation()[pri:3, instance:test_suite.Personal_Pan_Test@27dc79f7]" started-at="2022-04-20T11:27:12 IST" name="t_c_validation" finished-at="2022-04-20T11:27:12 IST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t_c_validation -->
+        <test-method signature="term_checkbox()[pri:4, instance:test_suite.Personal_Pan_Test@27dc79f7]" started-at="2022-04-20T11:27:12 IST" name="term_checkbox" finished-at="2022-04-20T11:27:12 IST" duration-ms="83" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- term_checkbox -->
+        <test-method signature="review_confirm()[pri:5, instance:test_suite.Personal_Pan_Test@27dc79f7]" started-at="2022-04-20T11:27:12 IST" name="review_confirm" finished-at="2022-04-20T11:27:12 IST" duration-ms="94" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- review_confirm -->
+        <test-method signature="invitation_code()[pri:6, instance:test_suite.Personal_Pan_Test@27dc79f7]" started-at="2022-04-20T11:27:12 IST" name="invitation_code" finished-at="2022-04-20T11:27:12 IST" duration-ms="329" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invitation_code -->
+        <test-method signature="subit_in_code()[pri:7, instance:test_suite.Personal_Pan_Test@27dc79f7]" started-at="2022-04-20T11:27:12 IST" name="subit_in_code" finished-at="2022-04-20T11:27:12 IST" duration-ms="137" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subit_in_code -->
+        <test-method signature="org_details()[pri:8, instance:test_suite.Personal_Pan_Test@27dc79f7]" started-at="2022-04-20T11:27:12 IST" name="org_details" finished-at="2022-04-20T11:27:14 IST" duration-ms="1112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- org_details -->
+        <test-method signature="per_pan_validation()[pri:9, instance:test_suite.Personal_Pan_Test@27dc79f7]" started-at="2022-04-20T11:27:14 IST" name="per_pan_validation" finished-at="2022-04-20T11:27:16 IST" duration-ms="2593" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- per_pan_validation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Personal_Pan_Test@27dc79f7]" started-at="2022-04-20T11:27:16 IST" name="teardown" finished-at="2022-04-20T11:27:16 IST" duration-ms="72" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Personal_Pan_Test -->
+      <class name="test_suite.Cin_Validate_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Cin_Validate_Test@1a38ba58]" started-at="2022-04-20T11:28:28 IST" name="setup" finished-at="2022-04-20T11:28:29 IST" duration-ms="1335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="log_in_seller()[pri:1, instance:test_suite.Cin_Validate_Test@1a38ba58]" started-at="2022-04-20T11:28:29 IST" name="log_in_seller" finished-at="2022-04-20T11:28:33 IST" duration-ms="3437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_in_seller -->
+        <test-method signature="Cin_no_valid()[pri:2, instance:test_suite.Cin_Validate_Test@1a38ba58]" started-at="2022-04-20T11:28:33 IST" name="Cin_no_valid" finished-at="2022-04-20T11:28:39 IST" duration-ms="6414" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Cin_no_valid -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Cin_Validate_Test@1a38ba58]" started-at="2022-04-20T11:28:39 IST" name="teardown" finished-at="2022-04-20T11:28:39 IST" duration-ms="66" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Cin_Validate_Test -->
+      <class name="test_suite.Mobile_Num_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:16 IST" name="setup" finished-at="2022-04-20T11:27:18 IST" duration-ms="1519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="title_validation()[pri:1, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:18 IST" name="title_validation" finished-at="2022-04-20T11:27:18 IST" duration-ms="26" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title_validation -->
+        <test-method signature="logo_validation()[pri:2, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:18 IST" name="logo_validation" finished-at="2022-04-20T11:27:18 IST" duration-ms="30" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logo_validation -->
+        <test-method signature="t_c_validation()[pri:3, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:18 IST" name="t_c_validation" finished-at="2022-04-20T11:27:18 IST" duration-ms="93" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t_c_validation -->
+        <test-method signature="term_checkbox()[pri:4, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:18 IST" name="term_checkbox" finished-at="2022-04-20T11:27:18 IST" duration-ms="57" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- term_checkbox -->
+        <test-method signature="review_confirm()[pri:5, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:18 IST" name="review_confirm" finished-at="2022-04-20T11:27:18 IST" duration-ms="91" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- review_confirm -->
+        <test-method signature="invitation_code()[pri:6, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:18 IST" name="invitation_code" finished-at="2022-04-20T11:27:18 IST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invitation_code -->
+        <test-method signature="subit_in_code()[pri:7, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:18 IST" name="subit_in_code" finished-at="2022-04-20T11:27:18 IST" duration-ms="124" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subit_in_code -->
+        <test-method signature="org_details()[pri:8, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:18 IST" name="org_details" finished-at="2022-04-20T11:27:19 IST" duration-ms="1005" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- org_details -->
+        <test-method signature="per_pan_validation()[pri:9, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:19 IST" name="per_pan_validation" finished-at="2022-04-20T11:27:22 IST" duration-ms="2475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- per_pan_validation -->
+        <test-method signature="mobile_verfy()[pri:10, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:22 IST" name="mobile_verfy" finished-at="2022-04-20T11:27:26 IST" duration-ms="3860" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mobile_verfy -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Mobile_Num_Test@6b85300e]" started-at="2022-04-20T11:27:26 IST" name="teardown" finished-at="2022-04-20T11:27:26 IST" duration-ms="79" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Mobile_Num_Test -->
+      <class name="test_suite.Invitation_Code_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Invitation_Code_Test@51b01960]" started-at="2022-04-20T11:27:00 IST" name="setup" finished-at="2022-04-20T11:27:02 IST" duration-ms="1471" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="title_validation()[pri:1, instance:test_suite.Invitation_Code_Test@51b01960]" started-at="2022-04-20T11:27:02 IST" name="title_validation" finished-at="2022-04-20T11:27:02 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- title_validation -->
+        <test-method signature="logo_validation()[pri:2, instance:test_suite.Invitation_Code_Test@51b01960]" started-at="2022-04-20T11:27:02 IST" name="logo_validation" finished-at="2022-04-20T11:27:02 IST" duration-ms="44" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logo_validation -->
+        <test-method signature="t_c_validation()[pri:3, instance:test_suite.Invitation_Code_Test@51b01960]" started-at="2022-04-20T11:27:02 IST" name="t_c_validation" finished-at="2022-04-20T11:27:02 IST" duration-ms="134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- t_c_validation -->
+        <test-method signature="term_checkbox()[pri:4, instance:test_suite.Invitation_Code_Test@51b01960]" started-at="2022-04-20T11:27:02 IST" name="term_checkbox" finished-at="2022-04-20T11:27:02 IST" duration-ms="105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- term_checkbox -->
+        <test-method signature="review_confirm()[pri:5, instance:test_suite.Invitation_Code_Test@51b01960]" started-at="2022-04-20T11:27:02 IST" name="review_confirm" finished-at="2022-04-20T11:27:02 IST" duration-ms="98" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- review_confirm -->
+        <test-method signature="invitation_code()[pri:6, instance:test_suite.Invitation_Code_Test@51b01960]" started-at="2022-04-20T11:27:02 IST" name="invitation_code" finished-at="2022-04-20T11:27:05 IST" duration-ms="2386" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invitation_code -->
+        <test-method signature="subit_in_code()[pri:7, instance:test_suite.Invitation_Code_Test@51b01960]" started-at="2022-04-20T11:27:05 IST" name="subit_in_code" finished-at="2022-04-20T11:27:05 IST" duration-ms="60" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- subit_in_code -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Invitation_Code_Test@51b01960]" started-at="2022-04-20T11:27:05 IST" name="teardown" finished-at="2022-04-20T11:27:05 IST" duration-ms="68" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Invitation_Code_Test -->
+      <class name="test_suite.Bill_Plan_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Bill_Plan_Test@3bb9efbc]" started-at="2022-04-20T11:29:49 IST" name="setup" finished-at="2022-04-20T11:29:50 IST" duration-ms="1391" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="log_in_seller()[pri:1, instance:test_suite.Bill_Plan_Test@3bb9efbc]" started-at="2022-04-20T11:29:50 IST" name="log_in_seller" finished-at="2022-04-20T11:29:54 IST" duration-ms="3452" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_in_seller -->
+        <test-method signature="bill_plan_validation()[pri:2, instance:test_suite.Bill_Plan_Test@3bb9efbc]" started-at="2022-04-20T11:29:54 IST" name="bill_plan_validation" finished-at="2022-04-20T11:30:00 IST" duration-ms="5844" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bill_plan_validation -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Bill_Plan_Test@3bb9efbc]" started-at="2022-04-20T11:30:00 IST" name="teardown" finished-at="2022-04-20T11:30:00 IST" duration-ms="80" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Bill_Plan_Test -->
+      <class name="test_suite.Admin_Login_Test">
+        <test-method is-config="true" signature="setup()[pri:0, instance:test_suite.Admin_Login_Test@2b27cc70]" started-at="2022-04-20T11:31:26 IST" name="setup" finished-at="2022-04-20T11:31:27 IST" duration-ms="1408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="log_in_admin()[pri:1, instance:test_suite.Admin_Login_Test@2b27cc70]" started-at="2022-04-20T11:31:27 IST" name="log_in_admin" finished-at="2022-04-20T11:31:31 IST" duration-ms="4417" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- log_in_admin -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_suite.Admin_Login_Test@2b27cc70]" started-at="2022-04-20T11:31:31 IST" name="teardown" finished-at="2022-04-20T11:31:32 IST" duration-ms="69" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- test_suite.Admin_Login_Test -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
