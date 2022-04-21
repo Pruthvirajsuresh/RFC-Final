@@ -1,0 +1,9 @@
+test_suite/Business_details_Test.class
+test_suite/Doc_upload_Test.class
+test_suite/APOB_Test.class
+test_suite/Listeners.class
+test_suite/State_Selection_Test.class
+test_suite/Admin_Login_Test.class
+test_suite/RFC_Selection_Test.class
+test_suite/Landing_RFC_Test.class
+test_suite/RFC_approval_Test.class

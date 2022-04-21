@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="test_suite.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="test_suite.RFC_approval_Test">
+        <methods>
+          <include name="closebrowser"/>
+          <include name="RFC_approval"/>
+        </methods>
+      </class> <!-- test_suite.RFC_approval_Test -->
+      <class name="test_suite.APOB_Test">
+        <methods>
+          <include name="APOB_validate"/>
+        </methods>
+      </class> <!-- test_suite.APOB_Test -->
+      <class name="test_suite.Business_details_Test">
+        <methods>
+          <include name="business_info"/>
+        </methods>
+      </class> <!-- test_suite.Business_details_Test -->
+      <class name="test_suite.State_Selection_Test">
+        <methods>
+          <include name="state_select"/>
+        </methods>
+      </class> <!-- test_suite.State_Selection_Test -->
+      <class name="test_suite.Doc_upload_Test">
+        <methods>
+          <include name="doc_upload"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- test_suite.Doc_upload_Test -->
+      <class name="test_suite.RFC_Selection_Test">
+        <methods>
+          <include name="RFC_select"/>
+        </methods>
+      </class> <!-- test_suite.RFC_Selection_Test -->
+      <class name="test_suite.Landing_RFC_Test">
+        <methods>
+          <include name="setup"/>
+          <include name="log_in_seller"/>
+        </methods>
+      </class> <!-- test_suite.Landing_RFC_Test -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
